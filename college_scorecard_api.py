@@ -14,5 +14,5 @@ def _get_womens_colleges():
     """
 
     return requests.get(
-        url=f"https://api.data.gov/ed/collegescorecard/v1/schools?api_key={auth_config['API_KEY']}&school.women_only=1&fields=id,school.name,school.city,school.state,location&per_page=100",
+        url=f"https://api.data.gov/ed/collegescorecard/v1/schools?api_key={auth_config['API_KEY']}&school.women_only=1&fields=id,school.name,school.school_url,school.city,school.state,location&per_page=100",
     ).json()
